@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Simon Game">
+    <meta name="author" content="Karishma Garg">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    <!-- Heading -->
+    <h1>Simon Game</h1>
+
+    <!-- Main -->
+    <main>
+
+        <!-- Level -->
+        <div class="level">Level 1 of 20</div>
+
+        <!-- Tile Container -->
+        <div class="tile-container unclickable">
+            <div class="tile red" data-tile="red"></div>
+            <div class="tile green" data-tile="green"></div>
+            <div class="tile blue" data-tile="blue"></div>
+            <div class="tile yellow" data-tile="yellow"></div>
+        </div>
+
+        <!-- Buttons -->
+        <button id="start">Start</button>
+        <button id="strict">Strict</button>
+        <button id="reset">Reset</button>
+
+        <!-- Audios -->
+        <div class="hidden">
+            <audio
+            src="https://s3.amazonaws.com/freecodecamp/simonSound1.mp3"
+            data-sound="red"
+            ></audio>
+            <audio
+            src="https://s3.amazonaws.com/freecodecamp/simonSound2.mp3"
+            data-sound="green"
+            ></audio>
+            <audio
+            src="https://s3.amazonaws.com/freecodecamp/simonSound3.mp3"
+            data-sound="blue"
+            ></audio>
+            <audio
+            src="https://s3.amazonaws.com/freecodecamp/simonSound4.mp3"
+            data-sound="yellow"
+            ></audio>
+        </div>
+
+        <!-- Info -->
+        <div class="info">Game Start</div>
+        
+    </main>
+
+    <!-- Script -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>

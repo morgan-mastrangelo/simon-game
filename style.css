@@ -1,0 +1,90 @@
+/* Font */
+@import url('https://fonts.googleapis.com/css2?family=Fredoka:wght@300;500&display=swap');
+
+/* Universal Selector */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Fredoka', sans-serif;
+}
+/* body */
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    flex-direction: column;
+    min-width: 320px;
+    text-align: center;
+    background-color: #000000;
+}
+
+/* Main Heading */
+h1{
+    color: white;
+    margin-bottom: 40px;
+}
+
+/* Main */
+main{
+    background-color: #c9c9ea;
+    padding: 30px 50px;
+    text-align: center;
+}
+
+/* Tile Container */
+.tile-container{
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+    grid-template-rows: repeat(2, auto);
+    width: fit-content;
+    gap: 10px;
+    margin-bottom: 30px;
+    margin-left: 30px;
+}
+/* Tile */
+.tile{
+    width: 70px;
+    height: 70px;
+    border: 1px solid black;
+}
+.red{
+    background-color: red;
+}
+.green{
+    background-color: greenyellow;
+}
+.blue{
+    background-color: blue;
+}
+.yellow{
+    background-color: rgb(196, 196, 31);
+}
+.tile.active{
+    background-color: #c5c5ca;
+}
+.unclickable{
+    pointer-events: none;
+}
+
+/* Button */
+button{
+    padding: 5px 10px;
+    font-size: 1.1rem;
+}
+button:hover{
+    color: #252539;
+    cursor: pointer;
+}
+
+/* Info */
+.info{
+    width: 150px;
+    margin: 20px auto 0;
+}
+
+/* Level text */
+.level{
+    margin-bottom: 20px;
+}
